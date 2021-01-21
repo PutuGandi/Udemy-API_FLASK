@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build: ./web
+    environment:
+      - FLASK_ENV=dev
+      - FLASK_APP=api.py
+    ports:
+      - "5000:5000"
